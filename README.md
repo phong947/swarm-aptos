@@ -1,40 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Swarm Aptos
 
-First, run the development server:
+Swarm Aptos is a decentralized application (dApp) built on the Aptos blockchain, utilizing Next.js for a seamless and responsive frontend experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+-   **Decentralized Transactions**: Secure and fast transactions using Aptos blockchain.
+    
+-   **Next.js Frontend**: Optimized performance and server-side rendering.
+    
+-   **Smart Contract Integration**: Interaction with Aptos smart contracts.
+    
+-   **User-Friendly UI**: Intuitive design for easy navigation.
+    
+-   **Wallet Connectivity**: Supports Aptos-compatible wallets for authentication and transactions.
+    
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+-   [Node.js](https://nodejs.org/) (v16+ recommended)
+    
+-   [Yarn](https://yarnpkg.com/) or npm
+    
+-   Aptos CLI
+    
+-   Aptos Wallet (e.g., Martian, Petra)
+    
+
+## Installation
+
+1.  Clone the repository:
+    
+    ```
+    git clone https://github.com/phong947/swarm-aptos.git
+    cd swarm-aptos
+    ```
+    
+2.  Install dependencies:
+    
+    ```
+    yarn install
+    ```
+    
+    or
+    
+    ```
+    npm install
+    ```
+    
+
+## Configuration
+
+Create a `.env.local` file in the root directory and add the necessary environment variables:
+
+```
+NEXT_PUBLIC_APTOS_NETWORK=mainnet # or testnet\NEXT_PUBLIC_CONTRACT_ADDRESS=your_contract_address
+NEXT_PUBLIC_WALLET_PROVIDER=wallet_provider_url
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the Project
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To start the development server:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+yarn dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+OR
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm run dev
+```
 
-## Learn More
+Open http://localhost:3000 in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Building for Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To build and start the application in production mode:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+yarn build && yarn start
+```
 
-## Deploy on Vercel
+OR
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm run build && npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+
+You can deploy the application to Vercel, Netlify, or any hosting platform supporting Next.js.
+
+```
+yarn deploy
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
